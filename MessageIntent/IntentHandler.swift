@@ -87,7 +87,7 @@ class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessag
         // Implement your application logic to send a message here.
         
         let userActivity = NSUserActivity(activityType: NSStringFromClass(INSendMessageIntent.self))
-        let response = INSendMessageIntentResponse(code: .failure, userActivity: userActivity)
+        let response = INSendMessageIntentResponse(code: .success, userActivity: userActivity)
         completion(response)
     }
     
